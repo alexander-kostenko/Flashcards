@@ -1,0 +1,58 @@
+h1 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #434d54;
+}
+
+body {
+  background-image: url("../img/world.png");
+  background-size: cover;
+}
+
+p {
+    font-size: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 700px;
+  height: 650px;
+  margin: auto;
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  transition: all 1s linear;
+  transform-style: preserve-3d;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+  cursor: pointer;
+}
+
+.front,
+.back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: yellow;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+  color: #434d54;
+  backface-visibility: hidden;
+}
+
+.back {
+  background-color:#434d54;
+  color: yellow;
+  transform: rotateY(180deg);
+}
